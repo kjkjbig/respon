@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        .wrapper{
+            min-height: 200vh;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            font-size: 20px;
+        }
+
+        .header, .footer, .content1, .content2>div>div {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 5px solid ;
+            
+        }
+
+        .header{
+            background-image: url(./extraobby6.png);
+            background-size:cover;
+            font-size: 80px;
+            font-weight:bold;
+            color: white    
+            
+                    
+        }
+        .content1{
+            background-image: url(./pok.png);
+            background-size:cover;
+            font-size: 60px;
+            font-weight:bold;
+            
+        }
+
+        .box1{
+            background-image: url(./IMG_4651.jpg);
+            background-size: cover;
+            background-position: 100%;
+        }
+
+        .box2{
+            background-image: url(./IMG_4652.jpg);
+            background-size: cover;
+            background-position: 100%;
+        }
+
+        .box3{
+            background-image: url(./ANY.png);
+            background-size: cover;
+            background-position: 100%;
+        }
+
+        .box4{
+            background-image: url(./testimage.png);
+            background-size: cover;
+            background-position: 100%;
+        }
+
+        .footer{
+            background-image: url(./extraobby5.png);
+            background-size:cover;
+            font-size: 60px;
+            font-weight:bold;
+            color: white
+        }
+
+        .main-container{
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+            color: white
+        }
+
+        .content2{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .content2>div{
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        @media screen and (max-width: 800px) { 
+
+            .main-container>div{
+                min-height: 400px;
+            }
+            
+            .content1{
+                flex: 100%;
+            }
+
+            .header{
+                min-height: 90px;
+            }
+
+            .footer{
+                min-height: 110px;
+            }
+
+        }
+
+        @media screen and (max-width: 520px) {
+            .content2>div{
+                flex-direction: column;
+            }
+            .content2>div>div{
+                min-height: 200px;
+            }
+            
+        }
+
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="header">SOMETHING</div>
+        
+        <div class="main-container">
+
+            <div class="content1">ANY</div>
+
+            <div class="content2">
+                <div class="subcontent1">
+                    <div class="box1"></div>
+                    <div class="box2"></div>
+                </div>
+                <div class="subcontent2">
+                    <div class="box3"></div>
+                    <div class="box4"></div>
+                </div>
+            </div>   
+        </div>
+        <div class="footer">natkamol onim</div>
+    </div>
+</body>
+</html>
